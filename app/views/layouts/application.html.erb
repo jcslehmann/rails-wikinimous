@@ -7,9 +7,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
-  <body>
+ <body>
+    <header class="bg-light mb-5 px-4 py-3 border-bottom d-flex sticky-top justify-content-between align-items-center">
+      <%= link_to "Wikinimous", articles_path, class: 'm-0 text-muted h4 text-decoration-none' %>
+      <%= link_to "New Article", new_article_path, class: 'btn btn-primary m-0' %>
+    </header>
     <%= yield %>
+    <footer class="bg-dark mt-5 p-5 text-center">
+      <p class="text-white m-0">Made in London @ Le Wagon</p>
+    </footer>
   </body>
+
 </html>

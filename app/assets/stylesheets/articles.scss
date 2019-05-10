@@ -1,0 +1,19 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+.container img {
+  max-width: 100%;
+}
+
+.markdown {
+  font-family: monospace;
+  font-size: 16px;
+  background-color: #FDF6E2;
+}
+
+.markdown:focus {
+    background-color: #FDF6E2;
+}
